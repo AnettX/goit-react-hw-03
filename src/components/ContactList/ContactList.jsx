@@ -1,8 +1,9 @@
 import Contact from "../Contact/Contact";
+import css from "./ContactList.module.css";
 
 const ContactList = ({ contacts, onDeleteContact }) => {
   return (
-    <div>
+    <div className={css.contactListContainer}>
       {Array.isArray(contacts) &&
         contacts.map((contact) => {
           return (
